@@ -69,3 +69,15 @@
 .single-page .ga4-bar-track{height:7px;border-radius:100px;background:#f5f6f8;overflow:hidden}
 .single-page .ga4-bar-track>span{display:block;height:100%;border-radius:100px;background:#F27999;min-width:1px}
 @media(max-width:750px){.single-page .ga4-channels{grid-template-columns:minmax(0,1fr);gap:10px;margin-top:16px}.single-page .ga4-channel{padding:12px}.single-page .ga4-channel-heading{align-items:flex-start}.single-page .ga4-channel-metrics{white-space:normal;text-align:right}}
+
+/* Compact attribution navigation */
+.channel-layout .channel-sidebar{width:248px;flex-shrink:0;background:#fff;border-right:1px solid #eceef3;padding:110px 14px 22px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:16px}
+.channel-sidebar-title{font-size:10px;font-weight:800;letter-spacing:1.1px;color:#a8afbe;padding:0 15px}
+.channel-sidebar nav{display:flex;flex-direction:column;gap:5px}
+.channel-sidebar nav button{border:0;border-radius:11px;background:transparent;color:#677386;display:flex;gap:12px;align-items:center;text-align:left;width:100%;padding:13px 14px;font-size:12px;font-weight:600;min-height:44px}
+.channel-sidebar nav button:hover,.channel-sidebar nav button.selected{background:#fff0f5;color:#d9517d}
+.channel-dot{display:block;width:8px;height:8px;border-radius:50%;background:#f27999;box-shadow:0 0 0 3px #fbe4ec;margin:0 5px;flex-shrink:0}
+.channel-sidebar-note{color:#a0a9b8;font-size:11px;line-height:1.6;padding:16px;margin-top:auto;border-top:1px solid #f0f2f5}
+.channel-mobile-toggle{display:none;background:transparent;border:0;color:#26334d;padding:8px}
+.channel-overlay{display:none}
+@media(max-width:920px){.channel-layout .channel-sidebar{position:fixed;z-index:100;left:0;top:0;bottom:0;padding-top:28px;transform:translateX(-102%);transition:transform .2s ease;box-shadow:8px 0 24px #1a274419}.channel-layout .channel-sidebar.open{transform:translateX(0)}.channel-mobile-toggle{display:inline-flex}.channel-overlay{display:block;position:fixed;z-index:99;inset:0;border:0;background:#0b182755}.channel-layout .top{justify-content:flex-start;gap:8px}.channel-layout .topright{margin-left:auto}}
