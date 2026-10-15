@@ -85,3 +85,6 @@
 /* Align sidebar identity with header; remove empty upper-left area */
 @media(min-width:921px){.channel-layout .channel-sidebar{padding:23px 14px 22px;gap:0}.channel-sidebar-brand{display:flex;align-items:center;gap:10px;padding:6px 12px 25px;color:#f27999;font-size:21px;font-weight:800;letter-spacing:-1px;white-space:nowrap;min-height:71px}.channel-sidebar-brand>div{color:#202b42}.channel-sidebar-brand span{color:#f27999}.channel-sidebar-brand small{display:block;color:#9ba5b4;font-size:8px;font-weight:700;letter-spacing:1.25px;margin-top:1px}.channel-layout .top>.brand{display:none}.channel-layout .top{justify-content:flex-end}.channel-sidebar-title{margin:32px 0 12px}.channel-sidebar nav{gap:5px}}
 @media(max-width:920px){.channel-sidebar-brand{display:none}}
+
+/* Three primary KPI cards after removing GA4 sessions */
+@media(min-width:801px){.single-page .stats{grid-template-columns:repeat(3,minmax(0,1fr))}}
