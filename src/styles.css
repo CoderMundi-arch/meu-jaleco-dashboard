@@ -88,3 +88,9 @@
 
 /* Three primary KPI cards after removing GA4 sessions */
 @media(min-width:801px){.single-page .stats{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* Neutral dashboard loading indicator */
+.dashboard-loading{display:flex;align-items:center;justify-content:center;gap:12px;min-height:100px;margin:20px 0;color:#8994a6;font-size:13px;font-weight:500}
+.dashboard-spinner{width:22px;height:22px;flex-shrink:0;border-radius:50%;border:3px solid #f8dce6;border-top-color:#f27999;animation:dashboard-spin .8s linear infinite}
+@keyframes dashboard-spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.dashboard-spinner{animation:none;border-top-color:#f27999}}
