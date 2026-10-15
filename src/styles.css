@@ -56,3 +56,16 @@
 @media(max-width:390px){.single-page .stat{padding:13px}.single-page .stathead{font-size:11px}.single-page .brand{font-size:19px}.single-page .top{padding:0 12px}}
 
 @media(max-width:800px){.single-page #orders td:nth-child(4):before{content:'Origem';}}
+
+/* GA4 traffic acquisition: structured responsive rows */
+.single-page .ga4-panel{margin-bottom:18px}
+.single-page .ga4-channels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 24px;margin-top:22px}
+.single-page .ga4-channel{min-width:0;padding:14px 16px;border:1px solid #edf0f3;border-radius:12px;background:#fff}
+.single-page .ga4-channel-heading{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.single-page .ga4-channel-name{font-size:14px;font-weight:600;color:#1b2944;overflow-wrap:anywhere}
+.single-page .ga4-channel-metrics{font-size:12px;color:#738198;white-space:nowrap}
+.single-page .ga4-channel-metrics strong{color:#14223d;font-weight:700}
+.single-page .ga4-metric-separator{padding:0 3px}
+.single-page .ga4-bar-track{height:7px;border-radius:100px;background:#f5f6f8;overflow:hidden}
+.single-page .ga4-bar-track>span{display:block;height:100%;border-radius:100px;background:#F27999;min-width:1px}
+@media(max-width:750px){.single-page .ga4-channels{grid-template-columns:minmax(0,1fr);gap:10px;margin-top:16px}.single-page .ga4-channel{padding:12px}.single-page .ga4-channel-heading{align-items:flex-start}.single-page .ga4-channel-metrics{white-space:normal;text-align:right}}
