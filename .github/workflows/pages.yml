@@ -23,6 +23,11 @@ jobs:
           node-version: '22'
       - run: npm install
       - run: npm run build
+      - name: Verify Vite publication files
+        run: |
+          test -s dist/index.html
+          test -d dist/assets
+          grep -q '/meu-jaleco-dashboard/assets/' dist/index.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
